@@ -1,9 +1,11 @@
 
 
-import App from "../App";
+import React from "react";
 
 
 function TaskItem({task,toggleTask,deleteTask}){
+
+
     return (
 
         <div>
