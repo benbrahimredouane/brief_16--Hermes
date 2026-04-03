@@ -2,9 +2,10 @@ import { useState } from "react";
 import Tasklist from "./components/TaskList";
 import TaskInput from "./components/TaskInput";
 import Filter from "./components/Filter";
+import { useLocalStorage } from "usehooks-ts";
 
 function App() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useLocalStorage('tasks-list',[]);
   const [filter, setFilter] = useState('all')
 
   const addTask = (title) => {
@@ -16,6 +17,7 @@ function App() {
     };
 
     setTasks([...tasks, newTask]);
+    
   };
 
   const toggleTask = (id) => {
@@ -42,7 +44,7 @@ function App() {
         <h1>hermes</h1>
       </nav>
 
-      <h1>Dashboard</h1>
+      <h1>Tasks</h1>
       <TaskInput addTask={addTask} />
 
         <Filter 
