@@ -23,16 +23,19 @@ function TaskInput({ addTask }) {
 
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="formlist">
 
       <input
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Add task ...."
+        className="input"
       />
 
-      <button >Add</button>
+      
+      <button className="add-btn">Add</button>
+     
       
     </form>
   );
