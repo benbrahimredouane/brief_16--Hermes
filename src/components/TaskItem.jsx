@@ -8,12 +8,12 @@ function TaskItem({task,toggleTask,deleteTask}){
 
     return (
 
-        <div>
+        <div className="task-container">
 
-        <p>{task.title}</p>
-        <span>Status : {task.completed ? "Done":"Pending"}</span>
-        <button onClick={() => toggleTask(task.id)}> {task.completed ? "Undo":"Complete"}</button>
-        <button onClick={() => deleteTask(task.id)}> Delete </button>
+        <p className="task">{task.title}</p>
+        <span className="task-status">Status : {task.completed ? "Done":"Pending"}</span>
+        <button className="task-toggle" onClick={() => toggleTask(task.id)}> {task.completed ? "Undo":"Complete"}</button>
+        <button className="task-delete" onClick={() => deleteTask(task.id)}> Delete </button>
 
          </div>
 
