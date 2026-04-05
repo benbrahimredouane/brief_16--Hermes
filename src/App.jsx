@@ -40,11 +40,9 @@ function App() {
 
   return (
     <>
-      <nav>
-        <h1>hermes</h1>
-      </nav>
+      
 
-      <h1>Tasks</h1>
+      <h1 className="title">Tasks</h1>
       <TaskInput addTask={addTask} />
 
         <Filter 
