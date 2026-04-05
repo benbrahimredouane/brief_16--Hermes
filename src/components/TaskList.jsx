@@ -6,7 +6,7 @@ import TaskItem from "./TaskItem";
 
 function Tasklist({tasks,toggleTask,deleteTask}){
     if(tasks.length === 0){
-        return <p>no tasks yet</p>
+        return <p className="no-task-yet">no tasks yet</p>
     }
 
     console.log(tasks);
