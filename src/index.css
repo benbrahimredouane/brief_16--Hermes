@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(208, 208, 208);
+}
+
+.header {
+    background-color: blueviolet;
+    margin-top: 0;
+    padding: 0.5em;
+    margin: 0;
+
+}
+
+.title {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 15px;
+    color: aliceblue;
+}
+
+.input {
+    padding: 0.6%;
+    border-radius: 11px;
+    border: 0;
+
+}
+
+form {
+    display: flex;
+    justify-content: center;
+
+}
+
+.add-btn {
+    border-radius: 10px;
+    margin-left: 5px;
+    border: 0;
+    background-color: rgb(20, 20, 234);
+    color: aliceblue;
+    padding: 15px;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.filter button {
+    padding: 10px;
+    margin: 3px;
+    border-radius: 6px;
+    border: 0;
+    background-color: rgb(2, 206, 2);
+
+}
+
+.filter button:hover {
+    background-color: rgb(22, 239, 22);
+
+}
+
+.task-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blueviolet;
+    margin: auto;
+    width: 80%;
+    border-radius: 11px;
+    margin-top: 15px;
+    padding: 14px;
+
+}
+
+.no-task-yet {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.task {
+    font-family: sans-serif;
+    color: white;
+
+}
+
+.task-status {
+    font-family: sans-serif;
+    color: rgb(174, 246, 222);
+    padding-bottom: 11px;
+
+}
+
+.task-delete {
+    background-color: red;
+    padding: 8px;
+    border-radius: 11px;
+    border: 0;
+    color: antiquewhite;
+}
+
+.task-toggle {
+    border: 0;
+    border-radius: 11px;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 20px;
+        margin-top: 10px;
+        
+    }
+
+    .input {
+        width: 100%;
+        margin-bottom: 10px;
+       
+    }
+
+    .add-btn {
+        width: 20%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+
+
+
+
+    }
+
+
+    .filter {
+        flex-wrap: wrap;
+       
+        padding: 0 10px;
+    }
+
+    .task-container {
+        width: 95%;
+        
+    }
+
+    .task {
+        flex-direction: column;
+      
+        text-align: center;
+        gap: 15px;
+    }
+}
